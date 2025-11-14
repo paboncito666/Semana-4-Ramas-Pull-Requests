@@ -13,13 +13,13 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   }
 
   if (!email.includes("@") || !email.includes(".")) {
-    status.style.color = "red";
+    status.style.color = "blue";
     status.textContent = "Ingresa un correo válido.";
     return;
   }
 
   // Simulación de envío exitoso
-  status.style.color = "green";
+  status.style.color = "red";
   status.textContent = "¡Mensaje enviado con éxito!";
 
   // limpiar formulario
